@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/ipInput.css">
+</head>
+<body>
+  <div id="ip">
+  </div>
+  <button id="btn1">setIp</button>
+  <button id='btn2'>getIp</button>
+  <div id="ipTxt"></div>
+
+  <script src="./jquery.1.7.2.js"></script>
+  <script src="./src/ipInput.js"></script>
+  <script>
+    var ipInput = $('#ip').ipInput();
+    $('#btn1').on('click', function() {
+      ipInput.setIp('192.168.191.1');
+    })
+    $('#btn2').on('click', function() {
+      $('#ipTxt').text(ipInput.getIp());
+    })
+  </script>
+</body>
+</html>
