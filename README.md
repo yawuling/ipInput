@@ -11,7 +11,7 @@
   $('#ip').ipInput()
 </script>
 ```
-###init
+### init
 
 `$(dom).ipInput()` or `$(dom).ipInput('127.0.0.1')`
 
